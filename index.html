@@ -4,35 +4,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>빈센트 반 고흐</title>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script>
-		$(document).ready(function(){
-			$("header button").click(function(){
-				if($("nav").css("display")=="none"){
-					$("nav").slideDown();
-					$(this).text("close");
-				}else{
-					$("nav").slideUp();
-					$(this).text("menu");
-				}
-			});
-
-		});
 		
-		</script>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<style>
 			* {margin:0; padding:0; box-sizing:border-box;}
-			html {scroll-behavior:smooth;}
-			body {background:black; font:10pt "나눔고딕"; }
+			html {scroll-behavior:smooth;}			
 			img {display:block; max-width:100%;}
+			body {background:black; font:10pt "나눔고딕"; }
 			
-			
-			#layout {position:relative; width:414px; margin:auto;}
+			#layout {position:relative; width:414px; margin:auto; padding-top:51.9pt;}
 			
 			
 			/*iframe 상단 공통*/
-			iframe {width:100%; border:none; position:absolute; height:51.9pt; }
+			iframe {width:100%; border:none; position:absolute; height:51.9pt; overflow:hidden; top:0; left:0;}
 			 
 			
 			/*상단 헤더*/
